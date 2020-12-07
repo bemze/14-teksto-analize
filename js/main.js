@@ -11,12 +11,12 @@ submit.addEventListener('click', e => {
     text = textarea.value;
     
     const analizatorius = new TextAnalizer(text);
+    analizatorius.addKalba('ru');
     const letterCount = analizatorius.letterCount();
-
     console.log(analizatorius);
     console.log(letterCount);
     console.log(`Raidziu kiekis:`, letterCount);
 })
 
-// TextAnalizer();
+
 
